@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.header, .footer, .content1, .content2>div>div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000000;
+    
+}
+
+.header{
+    background-image: url(./Great-Teacher-Onizuka-featured-image.jpg);
+    background-size:contain;
+   
+    font-size: 80px;
+    font-weight:bold;
+    color: #e1eb93;
+    text-shadow: 5px 5px 5px rgb(141, 73, 9);
+               
+}
+.content1{
+    background-image: url(./2ce3ee1a94d0f16d3c8c3a66fa6cc071.jpg);
+    background-size:cover;
+   
+   
+   
+}
+.footer{
+    background-image: url(./cover-gto\ \(1\).jpg);
+    background-size:cover;
+   
+   
+   
+}
+.box2{
+    background-image: url(./1__Omt2_nSOgHCMwTKmk4Y2w.jpg);
+    background-size:cover;
+   
+   
+   
+}
+.box3{
+    background-image: url(./7600-108332-eikichi-onizuka.jpg);
+    background-size:cover;
+   
+   
+   
+}
+.box4{
+    background-image: url(./a32e07adc94f7c1fa5a1ae51fd64cb67.jpg);
+    background-size:cover;
+   
+   
+   
+}
+.box5{
+    background-image: url(./e1f5ee0dcd7d8d6ca000d2332966a6821c8af7c4_00.jpg);
+    background-size:cover;
+   
+   
+   
+}
+
+.main-container{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.content2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.content2>div{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+@media screen and (max-width: 800px) { 
+
+    .main-container>div{
+        min-height: 400px;
+    }
+    
+    .content1{
+        flex: 100%;
+    }
+
+    .header{
+        min-height: 90px;
+    }
+
+    .footer{
+        min-height: 110px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .content2>div{
+        flex-direction: column;
+    }
+    .content2>div>div{
+        min-height: 200px;
+    }
+    
+}
+
+body{
+    background-color:rgba(136, 114, 217, 0.404)
+}
